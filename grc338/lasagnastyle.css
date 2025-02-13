@@ -7,22 +7,44 @@ img {
      display: block;
 }
 
-header, footer {
-   background-color: rgb(237, 141, 52); 
+header {
+    max-width: 60em;
+
 }
+img {
+    width: 100%;
+	display: block;
+}
+div.container 
+{
+    max-width: 60em;
+    margin: auto;
+}
+figure {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    margin: auto;
+}
+main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+} 
+
 h1 { font-family: Sutro, serif;
     font-weight: 700;
     font-style: normal;
     font-size: 2rem;
-    padding: 1 rem;
+    padding: 1.5 0.75 0.25 rem;
     color: rgb(255,255,255);
 }
 h2 { font-family: sutro, serif;
     font-weight: 300;
     font-style: normal;
-    padding:
-    font-size: 2rem; 
-    color:rgb(255,255,255);
+    padding: 0.05em 0.75em 0.25em;
+    font-size: 2em; 
+    color:rgb (255, 255, 255);
+
+
 
 }
 figcaption {
@@ -35,29 +57,43 @@ figcaption {
 h3{
 font-family: sutro, serif;
 font-weight: 300;
-margin: 1rem 1rem 1rem 1rem;
+margin: 2em 0.75em 0.25em;
 letter-spacing: .13rem;
-font-size: 1rem;
+font-size: 1.25em;
+text-transform:uppercase;
 color:rgb(237, 141, 52)
 }
 
 ul{
+    list-style-type: dark circle;
     font-family: poppins, sans-serif;  
     font-weight: 400;  
     font-style: normal;
 
 } 
 
+li { 
+	margin: 1rem 1rem 1rem 1rem;
+    font-family: poppins,sans-serif;
+    font-weight:300 ;
+    font-style: normal;
+}
 ol{
+    margin: 0.5em;
+    padding: 0em 0em 4em;
     font-family: poppins, sans-serif;  
     font-weight: 400;  
     font-style: normal; 
+    list-style-type: bullet;
 }
-li { 
-	margin: 1rem 1rem 1rem 1rem;
+footer {
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(237, 141, 52);
+    font-size: 1em;
+    padding: 1em 0.75em 1em 1em
+    
 }
-
-
-
 
 /*By the way, when we use the slash-asterisk combo, it’s a comment on the CSS and it’s meant for human beings. The machine knows it is not supposed to process anything until it finds a asterisk-slash combo that ends the comment on the CSS. */
